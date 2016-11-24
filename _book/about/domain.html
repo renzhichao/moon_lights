@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>前后端交互的基本结构 · GitBook</title>
+        <title>领域 · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="domain.html" />
+    <link rel="next" href="action.md" />
     
     
-    <link rel="prev" href="dsl_rest.html" />
+    <link rel="prev" href="fr_general.html" />
     
 
     </head>
@@ -134,7 +134,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="fr_general.html">
+        <li class="chapter " data-level="1.2" data-path="fr_general.html">
             
                 <a href="fr_general.html">
             
@@ -148,7 +148,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="domain.html">
+        <li class="chapter active" data-level="1.2.1" data-path="domain.html">
             
                 <a href="domain.html">
             
@@ -280,7 +280,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >前后端交互的基本结构</a>
+        <a href=".." >领域</a>
     </h1>
 </div>
 
@@ -295,40 +295,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x524D;&#x540E;&#x7AEF;&#x4EA4;&#x4E92;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;">&#x524D;&#x540E;&#x7AEF;&#x4EA4;&#x4E92;&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;</h1><ul><li><p>&#x73B0;&#x4EE3;&#x6240;&#x6307;&#x7684;&#x524D;&#x7AEF;&#x901A;&#x5E38;&#x4EE3;&#x8868;&#xFF1A;</p><ul><li><p>&#x79FB;&#x52A8;&#x7AEF;&#xFF1A;</p><ul><li>Android
+                                <h1 id="&#x9886;&#x57DF;&#xFF08;domain&#xFF09;">&#x9886;&#x57DF;&#xFF08;domain&#xFF09;</h1><p>&#x57FA;&#x4E8E;&#x524D;&#x540E;&#x7AEF;&#x4EA4;&#x4E92;&#x7684;&#x57FA;&#x672C;&#x89C4;&#x5219;&#xFF0C;&#x4EFB;&#x4F55;&#x4EA4;&#x4E92;&#x90FD;&#x662F;System - To - System&#xFF0C;&#x4EA4;&#x4E92;&#x7684;&#x662F;Domain&#x7684;&#x5B9E;&#x4F53;&#x4FE1;&#x606F;&#x3002;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x4E92;&#x8054;&#x7F51;&#x4E1A;&#x52A1;&#x800C;&#x8A00;&#xFF0C;&#x901A;&#x5E38;&#x7684;&#x9886;&#x57DF;&#x5305;&#x62EC;&#xFF1A;</p><ul><li>&#x7528;&#x6237;
 </li>
-<li>iOS
+<li>&#x5546;&#x54C1;
 </li>
-<li>H5 
+<li>&#x4F1A;&#x5458;
 </li>
-<li>Wap   
+<li>&#x4EA4;&#x6613;
+</li>
+<li>...
 </li></ul>
-</li>
-<li><p>PC&#x7AEF;&#xFF1A;</p><ul><li>Web
-</li>
-<li>Native&#xFF08;Windows Exe/Linux App&#xFF09;
-</li></ul>
-</li>
-<li><p>&#x5D4C;&#x5165;&#x5F0F;&#xFF1A;</p><ul><li>Native
-</li></ul>
-</li></ul>
-</li></ul>
-<h3 id="&#x4E00;&#x4E2A;&#x4E1A;&#x52A1;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x7ED9;&#x4E0D;&#x540C;&#x7684;&#x524D;&#x7AEF;&#x5C55;&#x73B0;&#x5E76;&#x4EA4;&#x4E92;&#x65F6;&#x5E38;&#x5E38;&#x4F1A;&#x56E0;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x524D;&#x7AEF;&#x6280;&#x672F;&#x7279;&#x6027;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5305;&#x62EC;&#xFF1A;">&#x4E00;&#x4E2A;&#x4E1A;&#x52A1;/&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x7ED9;&#x4E0D;&#x540C;&#x7684;&#x524D;&#x7AEF;&#x5C55;&#x73B0;&#x5E76;&#x4EA4;&#x4E92;&#x65F6;&#x5E38;&#x5E38;&#x4F1A;&#x56E0;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x524D;&#x7AEF;&#x6280;&#x672F;&#x7279;&#x6027;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5305;&#x62EC;&#xFF1A;</h3><ul><li>&#x7F51;&#x7EDC;&#x5E26;&#x5BBD;
-</li>
-<li>&#x5B9E;&#x65F6;&#x6027;&#x8981;&#x6C42;
-</li>
-<li>&#x5185;&#x5BB9;&#x548C;&#x8D44;&#x6E90;&#x7684;&#x5206;&#x79BB;
-</li>
-<li>&#x5347;&#x7EA7;&#x548C;&#x70ED;&#x5347;&#x7EA7;
-</li></ul>
-<h3 id="&#x8FD9;&#x8981;&#x6C42;&#x6211;&#x4EEC;&#x5728;&#x8FDB;&#x884C;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x89C4;&#x5212;&#x548C;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x5728;&#x67B6;&#x6784;&#x5C42;&#x9762;&#x505A;&#x76F8;&#x5173;&#x7684;&#x5F25;&#x5408;&#x8BBE;&#x8BA1;&#xFF0C;&#x5982;&#xFF1A;">&#x8FD9;&#x8981;&#x6C42;&#x6211;&#x4EEC;&#x5728;&#x8FDB;&#x884C;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x89C4;&#x5212;&#x548C;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x5728;&#x67B6;&#x6784;&#x5C42;&#x9762;&#x505A;&#x76F8;&#x5173;&#x7684;&#x5F25;&#x5408;&#x8BBE;&#x8BA1;&#xFF0C;&#x5982;&#xFF1A;</h3><ul><li>&#x6570;&#x636E;&#x5206;&#x9875;
-</li>
-<li>&#x538B;&#x7F29;
-</li>
-<li>&#x9759;&#x6001;&#x5316;&#x548C;CDN
-</li></ul>
-<h3 id="&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x5174;&#x8D77;&#x524D;&#xFF0C;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x6210;&#x529F;&#x7684;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x548C;&#x4EA4;&#x4E92;&#x7684;&#x8BBE;&#x8BA1;&#x662F;&#xFF1A;">&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x5174;&#x8D77;&#x524D;&#xFF0C;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x6210;&#x529F;&#x7684;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x548C;&#x4EA4;&#x4E92;&#x7684;&#x8BBE;&#x8BA1;&#x662F;&#xFF1A;</h3><p>```</p><h1 id="&#x901A;&#x8BAF;&#x7F51;&#x7EDC;-"> &#x901A;&#x8BAF;&#x7F51;&#x7EDC; </h1>
-
 
                                 
                                 </section>
@@ -356,12 +332,12 @@
 
             
                 
-                <a href="dsl_rest.html" class="navigation navigation-prev " aria-label="Previous page: DSL与REST API">
+                <a href="fr_general.html" class="navigation navigation-prev " aria-label="Previous page: 前后端交互的基本结构">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="domain.html" class="navigation navigation-next " aria-label="Next page: 领域">
+                <a href="action.md" class="navigation navigation-next " aria-label="Next page: 操作">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -372,7 +348,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前后端交互的基本结构","level":"1.2","depth":1,"next":{"title":"领域","level":"1.2.1","depth":2,"path":"about/domain.md","ref":"about/domain.md","articles":[]},"previous":{"title":"DSL与REST API","level":"1.1.2","depth":2,"path":"about/dsl_rest.md","ref":"about/dsl_rest.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"about/fr_general.md","mtime":"2016-11-24T07:47:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-24T07:18:12.462Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"领域","level":"1.2.1","depth":2,"next":{"title":"操作","level":"1.2.2","depth":2,"path":"about/action.md","ref":"about/action.md","articles":[]},"previous":{"title":"前后端交互的基本结构","level":"1.2","depth":1,"path":"about/fr_general.md","ref":"about/fr_general.md","articles":[{"title":"领域","level":"1.2.1","depth":2,"path":"about/domain.md","ref":"about/domain.md","articles":[]},{"title":"操作","level":"1.2.2","depth":2,"path":"about/action.md","ref":"about/action.md","articles":[]},{"title":"事务","level":"1.2.3","depth":2,"path":"about/transaction.md","ref":"about/transaction.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"about/domain.md","mtime":"2016-11-24T08:08:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-24T07:18:12.462Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
