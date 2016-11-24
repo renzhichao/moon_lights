@@ -7,7 +7,7 @@
     * [领域](about/domain.md)
     * [操作](about/action.md)
     * [事务](about/transaction.md)
-    * [异常和错误](about/exception.md)
+    * 异常和错误
         * [异常](about/exception.md)
         * [错误](about/error.md)
 * [接口定义的基本特性](interface/gr.md)
@@ -16,12 +16,15 @@
     * [前向兼容](interface/front-compatibility.md)
     * [可寻址--URL规则](interface/url.md)
     * [可编解码--JSON](interface/json.md)
-    * [统一权限模型](interface/rbac.md)        
-* [Rest电商领域基本接口规范]
+    * [统一权限模型](interface/rbac.md) 
+    * [无状态](interface/stateless.md)
+    * [会话保持](interface/session.md)
+    * [安全](interface/safety.md)       
+* Rest电商领域基本接口规范
     * [接口命名规范](gr/naming.md)
     * [参数和返回值命名规范](gr/parameter_naming.md)
     * [接口基本入参](gr/request.md)    
-    * [接口公共处理逻辑]
+    * 接口公共处理逻辑
         * [登录验证计费授权AAA](gr/aaa.md)
         * [异常和错误处理](gr/exception_error.md)
     * [接口返回规范](gr/response.md)
