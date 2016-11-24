@@ -7,7 +7,7 @@
     * [领域](about/domain.md)
     * [操作](about/action.md)
     * [事务](about/transaction.md)
-    * [异常和错误]
+    * [异常和错误](about/exception.md)
         * [异常](about/exception.md)
         * [错误](about/error.md)
 * [接口定义的基本特性](interface/gr.md)
